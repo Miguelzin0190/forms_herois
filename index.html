@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header id="cabeçalho">
+            <h1>Academia de Hérois</h1>
+            <p>Inscreva-se para participar da próxima missão.</p>
+        </header>
+        <main>
+            <form action="#" method="get">
+                <h2>Faça sua inscrição</h2>
+
+                <label for="nome">Nome do héroi:</label>
+                <input id="nome" name="nome" type="text"/>
+
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email"/>
+
+                <label for="idade">Idade:</label>
+                <input id="idade" name="idade" type="number"/>
+
+                <label for="equipe">Escolha sua equipe:</label>
+                <select id="equipe" name="equipe">
+                    <option>Avengers</option>
+                    <option>Bestas Enjauladas</option>
+                    <option>Liga da Justiça</option>
+                </select>
+
+                <h2>Qual poder você prefere?</h2>
+                <section id="opcoes">
+                    <section id="prefere1">
+                        <input id="voar" name="poder" type="radio" />
+                        <label for="voar">Voar</label>
+                    </section>
+                
+                    <section id="prefere2">
+                        <input id="supervelocidade" name="poder" type="radio" />
+                        <label for="supervelocidade">Supervelocidade</label>
+                    </section>
+
+                    <section id="prefere3">
+                        <input id="superforca" name="poder" type="radio" />
+                        <label for="superforca">Superforça</label>
+                    </section>
+
+                    <section id="prefere4">
+                        <input id="missoes" name="missoes" type="checkbox" />
+                        <label for="missoes">Quero receber novas missões.</label>
+                    </section>
+                </section>
+                <label for="motivo">Porque você quer ser um herói?</label>
+                <textarea id="motivo" name="motivo" rows="4"></textarea>
+                </section>
+                <button type="submit">Enviar inscrição</button>
+            </form>
+        </main>
+        <footer>
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
